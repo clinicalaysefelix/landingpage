@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
+/* eslint-disable prettier/prettier */
 import type { Config } from "tailwindcss";
 
 export default {
@@ -9,6 +11,9 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			primary: ["Plus Jakarta Sans", "sans-serif"]
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
