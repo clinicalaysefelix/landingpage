@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans as PlusJakartaSans } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
+import { Navbar } from '@/components/navbar'
+import Footer from '@/components/footer'
 
 const plusJakartaSans = PlusJakartaSans({
   subsets: ['latin'],
@@ -20,7 +22,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={cn('antialiased', plusJakartaSans.className)}>
-        {children}
+        <div className="flex min-h-screen flex-col">
+          <Navbar />
+          <main className="h-full flex-grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
