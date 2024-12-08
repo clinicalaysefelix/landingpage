@@ -46,7 +46,7 @@ export function Navbar() {
             className={cn(
               'md:gap-8',
               isOpen
-                ? 'absolute inset-x-0 top-16 z-20 flex-col bg-muted/30 px-3 py-6 md:static md:top-20 md:bg-transparent md:p-0'
+                ? 'absolute inset-x-0 top-16 z-20 flex-col bg-muted px-3 py-6 md:static md:top-20 md:bg-transparent md:p-0'
                 : 'hidden md:flex',
             )}
           >
