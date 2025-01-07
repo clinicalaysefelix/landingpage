@@ -7,55 +7,33 @@ import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
 import { WidthWrapper } from './width-wrapper'
-
-const LINKS = [
-  {
-    name: 'Serviços',
-    href: '#servicos',
-    target: '_self',
-  },
-  {
-    name: 'Avaliações',
-    href: '#avaliacoes',
-    target: '_self',
-  },
-  {
-    name: 'Contato',
-    href: '#contato',
-    target: '_self',
-  },
-  {
-    name: 'Matricular-se',
-    href: siteConfig.links.whatsapp,
-    target: '_blank',
-  },
-]
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet'
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-20 w-full">
+    <header
+      className={cn(
+        'sticky top-0 z-20 w-full bg-background backdrop-blur transition-all supports-[backdrop-filter]:bg-background/90',
+      )}
+    >
       <WidthWrapper>
         <nav className="flex h-16 items-center justify-between md:h-20">
           <Link href="/" target="_top">
             <span className="text-xl font-bold text-primary">SLF</span>
           </Link>
 
-          <div
-            className={cn(
-              'md:gap-8',
-              isOpen
-                ? 'absolute inset-x-0 top-16 z-20 flex-col bg-muted px-3 py-6 md:static md:top-20 md:bg-transparent md:p-0'
-                : 'hidden md:flex',
-            )}
-          >
-            <ul
-              className={cn(
-                'flex flex-col items-center gap-5 md:flex-row md:items-center md:gap-6',
-              )}
-            >
-              {LINKS.map((link, i, { length }) => (
+          <div className="hidden md:flex md:gap-8">
+            <ul className="flex items-center gap-6">
+              {siteConfig.mainNav.map((link, i, { length }) => (
                 <li key={i}>
                   <Link
                     href={link.href}
@@ -75,16 +53,45 @@ export function Navbar() {
             </ul>
           </div>
 
-          <Button
-            size="icon"
-            variant="ghost"
-            className="group md:hidden"
-            data-open={isOpen}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <X className="rotate-90 scale-0 transition-all group-data-[open=true]:rotate-0 group-data-[open=true]:scale-100" />
-            <Menu className="group-data-[open=true]:rotate-100 absolute rotate-0 scale-100 transition-all group-data-[open=true]:scale-0" />
-          </Button>
+          <Sheet onOpenChange={setIsOpen} open={isOpen}>
+            <SheetTrigger asChild>
+              <Button
+                size="icon"
+                variant="ghost"
+                className="group md:hidden"
+                data-open={isOpen}
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <X className="rotate-90 scale-0 transition-all group-data-[open=true]:rotate-0 group-data-[open=true]:scale-100" />
+                <Menu className="group-data-[open=true]:rotate-100 absolute rotate-0 scale-100 transition-all group-data-[open=true]:scale-0" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="top">
+              <SheetHeader className="hidden">
+                <SheetTitle>Menu</SheetTitle>
+                <SheetDescription>Menu de navegação do site</SheetDescription>
+              </SheetHeader>
+              <ul className="my-8 flex flex-col items-center gap-6">
+                {siteConfig.mainNav.map((link, i, { length }) => (
+                  <li key={i}>
+                    <Link
+                      href={link.href}
+                      target={link.target}
+                      className={cn(
+                        'font-medium transition-colors',
+                        i === length - 1
+                          ? buttonVariants()
+                          : 'hover:text-primary',
+                      )}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </SheetContent>
+          </Sheet>
         </nav>
       </WidthWrapper>
     </header>

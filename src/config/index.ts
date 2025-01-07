@@ -9,6 +9,28 @@ export const siteConfig = {
     whatsapp:
       'https://api.whatsapp.com/message/5LRJLJG4XV72H1?autoload=1&app_absent=0',
   },
+  mainNav: [
+    {
+      name: 'Serviços',
+      href: '#servicos',
+      target: '_self',
+    },
+    {
+      name: 'Avaliações',
+      href: '#avaliacoes',
+      target: '_self',
+    },
+    {
+      name: 'Contato',
+      href: '#contato',
+      target: '_self',
+    },
+    {
+      name: 'Matricular-se',
+      href: 'https://api.whatsapp.com/message/5LRJLJG4XV72H1?autoload=1&app_absent=0',
+      target: '_blank',
+    },
+  ],
 }
 
 export type SiteConfig = typeof siteConfig
