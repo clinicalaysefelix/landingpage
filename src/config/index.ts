@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: 'Studio Layse Félix',
-  url: 'https://studiolaysefelix.com.br',
-  ogImage: 'https://studiolaysefelix.com.br/og.jpg',
+  name: 'Clínica Layse Félix',
+  url: 'https://clinicalaysefelix.com.br',
+  ogImage: 'https://clinicalaysefelix.com.br/og.jpg',
   description:
     'Acreditamos que a verdadeira saúde e bem-estar vêm da harmonia entre o corpo e a mente.',
   links: {
