@@ -114,7 +114,10 @@ export default function Home() {
         </WidthWrapper>
       </section>
 
-      <section className="rounded-t-3xl bg-[#ece9f7] px-1 py-12 md:px-16 md:py-24">
+      <section
+        className="rounded-t-3xl bg-[#ece9f7] px-1 py-12 md:px-16 md:py-24"
+        id="contato"
+      >
         <WidthWrapper>
           <div className="flex flex-1 flex-col items-center justify-between gap-6 lg:flex-row">
             <div className="flex flex-col gap-4">
