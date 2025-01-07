@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 import { Navbar } from '@/components/navbar'
 import Footer from '@/components/footer'
 import { siteConfig } from '@/config'
+import { WhatsappButton } from '@/components/whatsapp-button'
 
 const plusJakartaSans = PlusJakartaSans({
   subsets: ['latin'],
@@ -53,6 +54,7 @@ export default function RootLayout({
           <Navbar />
           <main className="h-full flex-grow">{children}</main>
           <Footer />
+          <WhatsappButton />
         </div>
       </body>
     </html>
