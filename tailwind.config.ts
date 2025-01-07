@@ -2,12 +2,19 @@
 /* eslint-disable prettier/prettier */
 import type { Config } from "tailwindcss";
 
+const {
+	default: flattenColorPalette,
+  } = require("tailwindcss/lib/util/flattenColorPalette");
+
+  /** @type {import('tailwindcss').Config} */
+
 export default {
     darkMode: ["class"],
     content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+	"./src/**/*.{ts,tsx}",
   ],
   theme: {
   	extend: {
@@ -80,13 +87,34 @@ export default {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+			'scroll': {
+				to: {
+				  transform: "translate(calc(-50% - 0.5rem))",
+				},
+			  },
+			
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+			'scroll': "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite"
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    addVariablesForColors
+  ]
 } satisfies Config;
+
+function addVariablesForColors({ addBase, theme }: any) {
+	const allColors = flattenColorPalette(theme("colors"));
+	const newVars = Object.fromEntries(
+	  Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+	);
+   
+	addBase({
+	  ":root": newVars,
+	});
+  }
