@@ -1,7 +1,8 @@
 import { Button } from '@/components/ui/button'
 import { WidthWrapper } from '@/components/width-wrapper'
-import { Phone, Instagram } from 'lucide-react'
+import { Instagram } from 'lucide-react'
 import Link from 'next/link'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const Contact: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ const Contact: React.FC = () => {
             <div className="flex w-full justify-between gap-4 md:justify-normal">
               <Link href="https://wa.me/5591983102506">
                 <Button>
-                  <Phone />
+                  <FaWhatsapp />
                   (91) 98310-2506
                 </Button>
               </Link>

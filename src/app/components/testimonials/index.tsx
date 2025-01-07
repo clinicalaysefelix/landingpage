@@ -41,7 +41,7 @@ const Testimonials: React.FC = () => {
   ]
 
   return (
-    <section className="px-1 py-12 md:px-16 md:py-24" id="contato">
+    <section className="px-1 py-12 md:px-16 md:py-24" id="avaliacoes">
       <WidthWrapper>
         <div className="mb-4 flex flex-col items-center justify-center gap-4 text-center">
           <p className="text-base font-bold">AVALIAÇÃO DOS CLIENTES</p>
