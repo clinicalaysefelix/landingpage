@@ -1,8 +1,9 @@
 import { Button } from '@/components/ui/button'
 import { WidthWrapper } from '@/components/width-wrapper'
-import { Instagram } from 'lucide-react'
+import { siteConfig } from '@/config'
 import Link from 'next/link'
 import { FaWhatsapp } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa6'
 
 const Contact: React.FC = () => {
   return (
@@ -17,15 +18,15 @@ const Contact: React.FC = () => {
               Venha nos fazer uma visita!
             </p>
             <div className="flex w-full justify-between gap-4 md:justify-normal">
-              <Link href="https://wa.me/5591983102506">
+              <Link href={siteConfig.links.whatsapp}>
                 <Button>
                   <FaWhatsapp />
                   (91) 98310-2506
                 </Button>
               </Link>
-              <Link href="https://instagram.com/clinicalaysefelix">
+              <Link href={siteConfig.links.instagram}>
                 <Button>
-                  <Instagram />
+                  <FaInstagram />
                   @clinicalaysefelix
                 </Button>
               </Link>
