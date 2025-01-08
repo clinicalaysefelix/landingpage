@@ -93,7 +93,7 @@ export const InfiniteMovingCards = ({
             className="w-[350px] max-w-full shadow-lg relative rounded-xl border border-b-0 px-8 py-6 md:w-[450px] bg-white"
             key={item.name}
           >
-            <blockquote className="flex flex-col gap-4">
+            <blockquote className="flex flex-col gap-4 h-full">
               <div className="flex">
                   <StarIcon fill="#FF520E" stroke="none" size={16}/>
                   <StarIcon fill="#FF520E" stroke="none" size={16}/>
@@ -108,7 +108,7 @@ export const InfiniteMovingCards = ({
               <span className=" relative z-20 text-sm leading-[1.6] text-foreground font-normal">
                 {item.quote}
               </span>
-              <div className="relative z-20 flex flex-row items-center gap-2">
+              <div className="relative z-20 flex flex-row items-center gap-2 mt-auto">
                 <Image alt={`Foto de ${item.name}`} src={item.photo} width={40} height={40} className="rounded-full"/>
                 <span className="flex flex-col">
                   <span className="text-sm leading-[1.6] text-primary font-bold">

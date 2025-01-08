@@ -71,4 +71,7 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  h2 {
+    @apply text-3xl font-bold md:text-4xl
+  }
 }
