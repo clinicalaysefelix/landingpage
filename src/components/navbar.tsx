@@ -15,6 +15,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet'
+import { Logo } from '@/assets/icons/logo'
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,7 +29,8 @@ export function Navbar() {
       <WidthWrapper margin="none">
         <nav className="flex h-16 items-center justify-between md:h-20">
           <Link href="/" target="_top">
-            <span className="text-xl font-bold text-primary">SLF</span>
+            <Logo className="h-fit w-12 md:w-16" />
+            <span className="sr-only">Clínica Layse Félix</span>
           </Link>
 
           <div className="hidden md:flex md:gap-8">
