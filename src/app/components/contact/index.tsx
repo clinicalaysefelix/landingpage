@@ -6,15 +6,12 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 const Contact: React.FC = () => {
   return (
-    <section
-      className="rounded-t-3xl bg-[#ece9f7] px-1 py-12 md:px-16 md:py-24"
-      id="contato"
-    >
+    <section className="rounded-t-3xl bg-[#ece9f7]" id="contato">
       <WidthWrapper>
         <div className="flex flex-1 flex-col items-center justify-between gap-6 lg:flex-row">
           <div className="flex flex-col gap-4">
             <p className="text-base font-bold">ENTRE EM CONTATO</p>
-            <h2 className="text-4xl font-bold">Fale conosco</h2>
+            <h2>Fale conosco</h2>
             <p>
               Estamos situados na Trav. Cônego Leitão, 1639, Castanhal, Brasil.
               Venha nos fazer uma visita!

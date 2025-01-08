@@ -22,10 +22,10 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        'sticky top-0 z-20 w-full bg-background backdrop-blur transition-all supports-[backdrop-filter]:bg-background/90',
+        'sticky top-0 z-50 w-full bg-background backdrop-blur transition-all supports-[backdrop-filter]:bg-background/90',
       )}
     >
-      <WidthWrapper>
+      <WidthWrapper margin="none">
         <nav className="flex h-16 items-center justify-between md:h-20">
           <Link href="/" target="_top">
             <span className="text-xl font-bold text-primary">SLF</span>

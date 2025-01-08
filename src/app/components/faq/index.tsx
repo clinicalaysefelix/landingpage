@@ -8,13 +8,11 @@ import {
 
 const FAQ: React.FC = () => {
   return (
-    <section className="py-12 md:py-24">
+    <section>
       <WidthWrapper>
         <div className="mx-auto flex w-full max-w-prose flex-col items-center justify-center gap-8">
           <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">
-              Perguntas Frequentes
-            </h2>
+            <h2>Perguntas Frequentes</h2>
             <p className="text-muted-foreground">
               Tem dúvidas sobre nossos serviços? Confira as perguntas mais
               frequentes sobre nossos atendimentos, como pilates, fisioterapia e

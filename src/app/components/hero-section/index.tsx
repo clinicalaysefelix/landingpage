@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="my-12 md:my-20 md:px-16">
+    <section>
       <WidthWrapper>
         <div className="grid grid-cols-1 gap-12 xl:grid-cols-2 xl:gap-20">
           <div className="mx-auto flex max-w-prose flex-col items-center justify-center gap-4 text-pretty text-center xl:max-w-lg xl:items-start xl:text-start">

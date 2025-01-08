@@ -4,16 +4,11 @@ import { PiPersonSimple, PiPersonSimpleTaiChi } from 'react-icons/pi'
 
 const Services: React.FC = () => {
   return (
-    <section
-      className="rounded-t-3xl bg-[#ece9f7] px-1 py-12 md:px-16 md:py-24"
-      id="servicos"
-    >
+    <section className="rounded-t-3xl bg-[#ece9f7]" id="servicos">
       <WidthWrapper>
         <div className="mb-4 flex flex-col gap-4">
           <p className="text-base font-bold">NOSSOS SERVIÇOS</p>
-          <h2 className="text-4xl font-bold">
-            Saiba mais sobre nossos serviços
-          </h2>
+          <h2>Saiba mais sobre nossos serviços</h2>
         </div>
         <div className="mt-12 flex flex-col gap-4 md:flex-row md:items-center md:justify-center">
           <Image
