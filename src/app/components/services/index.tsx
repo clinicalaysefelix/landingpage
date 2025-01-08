@@ -4,7 +4,7 @@ import { PiPersonSimple, PiPersonSimpleTaiChi } from 'react-icons/pi'
 
 const Services: React.FC = () => {
   return (
-    <section className="rounded-t-3xl bg-[#ece9f7]" id="servicos">
+    <section className="scroll-m-8 rounded-t-3xl bg-[#ece9f7]" id="servicos">
       <WidthWrapper>
         <div className="mb-4 flex flex-col gap-4">
           <p className="text-base font-bold">NOSSOS SERVIÇOS</p>
