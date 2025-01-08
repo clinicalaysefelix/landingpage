@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative mx-auto w-fit">
+          <div className="relative mx-auto w-fit overflow-hidden">
             <div className="absolute bottom-auto left-auto top-0 -z-10 h-[400px] w-[400px] -translate-x-[30%] translate-y-[40%] rounded-full bg-primary opacity-20 blur-[80px]"></div>
             <div className="absolute right-0 top-0 -z-10 h-[250px] w-[250px] -translate-y-[10%] translate-x-[40%] rounded-full bg-primary opacity-25 blur-[40px]"></div>
             <Image

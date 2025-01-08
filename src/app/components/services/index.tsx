@@ -21,7 +21,7 @@ const Services: React.FC = () => {
             />
           </div>
           <div className="flex flex-col gap-4 md:order-1">
-            <div className="flex justify-start gap-4 rounded-2xl bg-white p-4 md:bg-transparent md:px-0">
+            <div className="flex justify-start gap-4 rounded-2xl bg-white p-4 md:items-center md:bg-transparent md:px-0">
               <div className="align-center h-fit w-fit rounded-xl bg-primary p-2">
                 <PiPersonSimple color="white" size={32} />
               </div>
@@ -36,7 +36,7 @@ const Services: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex justify-start gap-4 rounded-2xl bg-white p-4 md:bg-transparent md:px-0">
+            <div className="flex justify-start gap-4 rounded-2xl bg-white p-4 md:items-center md:bg-transparent md:px-0">
               <div className="align-center h-fit w-fit rounded-xl bg-primary p-2">
                 <PiPersonSimpleTaiChi color="white" size={32} />
               </div>
