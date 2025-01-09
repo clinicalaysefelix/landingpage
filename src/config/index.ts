@@ -1,3 +1,5 @@
+const whatsappLink = 'https://wa.me/5591983102506'
+
 export const siteConfig = {
   name: 'Clínica Layse Félix',
   url: 'https://clinicalaysefelix.com.br',
@@ -5,9 +7,8 @@ export const siteConfig = {
   description:
     'Acreditamos que a verdadeira saúde e bem-estar vêm da harmonia entre o corpo e a mente.',
   links: {
-    instagram: 'https://www.instagram.com/clinicalaysefelix/',
-    whatsapp:
-      'https://api.whatsapp.com/message/5LRJLJG4XV72H1?autoload=1&app_absent=0',
+    instagram: 'https://instagram.com/clinicalaysefelix',
+    whatsapp: whatsappLink,
   },
   mainNav: [
     {
@@ -27,7 +28,7 @@ export const siteConfig = {
     },
     {
       name: 'Matricular-se',
-      href: 'https://api.whatsapp.com/message/5LRJLJG4XV72H1?autoload=1&app_absent=0',
+      href: whatsappLink,
       target: '_blank',
     },
   ],
