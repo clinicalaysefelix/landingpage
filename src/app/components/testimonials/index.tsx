@@ -44,7 +44,9 @@ const Testimonials: React.FC = () => {
     <section id="avaliacoes" className="scroll-m-28">
       <WidthWrapper>
         <div className="mb-4 flex flex-col items-center justify-center gap-4 text-center">
-          <p className="text-base font-bold">AVALIAÇÃO DOS CLIENTES</p>
+          <p className="text-base font-bold text-indigo-900">
+            AVALIAÇÃO DOS CLIENTES
+          </p>
           <h2>
             Conheça as incríveis experiências de
             <br />

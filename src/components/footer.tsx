@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-sky-950">
+    <footer className="w-full bg-[#131615]">
       <WidthWrapper margin="none" className="py-6 md:py-12">
         <div className="flex flex-col items-center justify-between gap-6 font-primary font-medium text-white lg:flex-row">
           <LogoFullMono className="h-fit w-48" />
