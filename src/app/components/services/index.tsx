@@ -4,10 +4,10 @@ import { PiPersonSimple, PiPersonSimpleTaiChi } from 'react-icons/pi'
 
 const Services: React.FC = () => {
   return (
-    <section className="scroll-m-8 rounded-t-3xl bg-[#ece9f7]" id="servicos">
+    <section className="bg-section scroll-m-8 rounded-t-3xl" id="servicos">
       <WidthWrapper>
         <div className="flex flex-col gap-4">
-          <p className="text-base font-bold">NOSSOS SERVIÇOS</p>
+          <p className="text-base font-bold text-indigo-900">NOSSOS SERVIÇOS</p>
           <h2>Saiba mais sobre nossos serviços</h2>
         </div>
         <div className="mt-16 flex flex-col gap-8 md:flex-row md:items-center md:justify-center">
@@ -22,7 +22,7 @@ const Services: React.FC = () => {
           </div>
           <div className="flex flex-col gap-4 md:order-1">
             <div className="flex justify-start gap-4 rounded-2xl bg-white p-4 md:items-center md:bg-transparent md:px-0">
-              <div className="align-center h-fit w-fit rounded-xl bg-primary p-2">
+              <div className="align-center h-fit w-fit rounded-xl bg-indigo-900 p-2">
                 <PiPersonSimple color="white" size={32} />
               </div>
               <div>
@@ -37,7 +37,7 @@ const Services: React.FC = () => {
             </div>
 
             <div className="flex justify-start gap-4 rounded-2xl bg-white p-4 md:items-center md:bg-transparent md:px-0">
-              <div className="align-center h-fit w-fit rounded-xl bg-primary p-2">
+              <div className="align-center h-fit w-fit rounded-xl bg-indigo-900 p-2">
                 <PiPersonSimpleTaiChi color="white" size={32} />
               </div>
               <div>
