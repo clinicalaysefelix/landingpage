@@ -111,7 +111,7 @@ export const InfiniteMovingCards = ({
               <div className="relative z-20 flex flex-row items-center gap-2 mt-auto">
                 <Image alt={`Foto de ${item.name}`} src={item.photo} width={40} height={40} className="rounded-full"/>
                 <span className="flex flex-col">
-                  <span className="text-sm leading-[1.6] text-primary font-bold">
+                  <span className="text-sm leading-[1.6] text-indigo-900 font-bold">
                     {item.name}
                   </span>
                   <span className=" text-sm leading-[1.6] text-muted-foreground font-normal">
