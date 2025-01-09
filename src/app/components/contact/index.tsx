@@ -7,11 +7,13 @@ import { FaInstagram } from 'react-icons/fa6'
 
 const Contact: React.FC = () => {
   return (
-    <section className="rounded-t-3xl bg-[#ece9f7]" id="contato">
+    <section className="bg-section rounded-t-3xl" id="contato">
       <WidthWrapper>
         <div className="grid grid-cols-1 items-center justify-between gap-6 lg:grid-cols-2">
           <div className="mr-auto flex flex-col items-center gap-4 text-center md:items-start md:text-start">
-            <p className="text-base font-bold">ENTRE EM CONTATO</p>
+            <p className="text-base font-bold text-indigo-900">
+              ENTRE EM CONTATO
+            </p>
             <h2>Fale conosco</h2>
             <p className="text-pretty text-muted-foreground">
               Estamos situados na Trav. Cônego Leitão, 1639, Castanhal, Brasil.
