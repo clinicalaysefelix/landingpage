@@ -16,9 +16,7 @@ const HeroSection: React.FC = () => {
             variants={animationConfig.variants}
             className="mx-auto flex max-w-prose flex-col items-center justify-center gap-4 text-pretty text-center xl:max-w-lg xl:items-start xl:text-start"
           >
-            <h1 className="text-3xl font-extrabold tracking-tight lg:text-5xl lg:leading-tight">
-              Transforme seu corpo e sua mente na Clínica Layse Felix
-            </h1>
+            <h1>Transforme seu corpo e sua mente na Clínica Layse Felix</h1>
             <p className="leading-7 text-muted-foreground md:text-lg">
               Na Clínica Layse Felix, cuidamos de você unindo práticas modernas
               e personalizadas para promover o bem-estar físico e mental.
