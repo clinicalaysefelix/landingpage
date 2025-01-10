@@ -29,7 +29,7 @@ const createAnimationConfig = () => {
       transition: defaultTransition,
     },
     toTopOffScreen: {
-      y: 100,
+      y: 20,
       opacity: 0,
     },
     toTopOnScreen: {
@@ -38,7 +38,7 @@ const createAnimationConfig = () => {
       transition: defaultTransition,
     },
     toBottomOffScreen: {
-      y: -100,
+      y: -20,
       opacity: 0,
     },
     toBottomOnScreen: {
@@ -47,7 +47,7 @@ const createAnimationConfig = () => {
       transition: defaultTransition,
     },
     toLeftOffScreen: {
-      x: -100,
+      x: -20,
       opacity: 0,
     },
     toLeftOnScreen: {
@@ -56,7 +56,7 @@ const createAnimationConfig = () => {
       transition: defaultTransition,
     },
     toRightOffScreen: {
-      x: 100,
+      x: 20,
       opacity: 0,
     },
     toRightOnScreen: {
