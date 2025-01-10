@@ -1,7 +1,7 @@
-import { MotionDiv } from '@/components/motion-div'
+import { MotionDiv } from '@/components/motion/motion-div'
 import { Button } from '@/components/ui/button'
 import { WidthWrapper } from '@/components/width-wrapper'
-import { animationVariants } from '@/lib/utils'
+import { animationConfig } from '@/lib/animation'
 import Image from 'next/image'
 
 const HeroSection: React.FC = () => {
@@ -10,10 +10,10 @@ const HeroSection: React.FC = () => {
       <WidthWrapper>
         <div className="grid grid-cols-1 gap-12 xl:grid-cols-2 xl:gap-20">
           <MotionDiv
-            initial="offscreen2"
-            whileInView="onscreen2"
-            viewport={{ once: true, amount: 0.8 }}
-            variants={animationVariants}
+            initial="toBottomOffScreen"
+            whileInView="toBottomOnScreen"
+            viewport={animationConfig.viewport}
+            variants={animationConfig.variants}
             className="mx-auto flex max-w-prose flex-col items-center justify-center gap-4 text-pretty text-center xl:max-w-lg xl:items-start xl:text-start"
           >
             <h1 className="text-3xl font-extrabold tracking-tight lg:text-5xl lg:leading-tight">
@@ -30,10 +30,10 @@ const HeroSection: React.FC = () => {
           </MotionDiv>
 
           <MotionDiv
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: true, amount: 0.2 }}
-            variants={animationVariants}
+            initial="toBottomOffScreen"
+            whileInView="toBottomOnScreen"
+            viewport={animationConfig.viewport}
+            variants={animationConfig.variants}
             className="relative mx-auto w-fit overflow-hidden"
           >
             <div className="absolute bottom-auto left-auto top-0 -z-10 h-[400px] w-[400px] -translate-x-[30%] translate-y-[40%] rounded-full bg-primary opacity-20 blur-[80px]"></div>

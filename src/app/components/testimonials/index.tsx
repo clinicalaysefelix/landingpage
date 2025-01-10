@@ -1,5 +1,7 @@
+import { MotionDiv } from '@/components/motion/motion-div'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 import { WidthWrapper } from '@/components/width-wrapper'
+import { animationConfig } from '@/lib/animation'
 
 const Testimonials: React.FC = () => {
   const testimonials = [
@@ -43,7 +45,13 @@ const Testimonials: React.FC = () => {
   return (
     <section id="avaliacoes" className="scroll-m-28">
       <WidthWrapper>
-        <div className="mb-4 flex flex-col items-center justify-center gap-4 text-center">
+        <MotionDiv
+          variants={animationConfig.variants}
+          viewport={animationConfig.viewport}
+          initial="toBottomOffScreen"
+          whileInView="toBottomOnScreen"
+          className="mb-4 flex flex-col items-center justify-center gap-4 text-center"
+        >
           <p className="text-base font-bold text-indigo-900">
             AVALIAÇÃO DOS CLIENTES
           </p>
@@ -52,7 +60,7 @@ const Testimonials: React.FC = () => {
             <br />
             clientes com nossos serviços
           </h2>
-        </div>
+        </MotionDiv>
         <InfiniteMovingCards items={testimonials} speed="normal" />
       </WidthWrapper>
     </section>

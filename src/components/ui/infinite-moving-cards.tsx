@@ -1,5 +1,7 @@
 "use client";
 
+import { MotionDiv } from "@/components/motion/motion-div";
+import { animationConfig } from "@/lib/animation";
 import { cn } from "@/lib/utils";
 import { Star, StarIcon } from "lucide-react";
 import Image from "next/image";
@@ -73,7 +75,11 @@ export const InfiniteMovingCards = ({
     }
   };
   return (
-    <div
+    <MotionDiv
+    variants={animationConfig.variants}
+    viewport={animationConfig.viewport}
+    initial="toRightOffScreen"
+    whileInView="toRightOnScreen"
       ref={containerRef}
       className={cn(
         "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
@@ -123,6 +129,6 @@ export const InfiniteMovingCards = ({
           </li>
         ))}
       </ul>
-    </div>
+    </MotionDiv>
   );
 };
