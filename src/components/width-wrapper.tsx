@@ -2,7 +2,7 @@ import { cva, VariantProps } from 'class-variance-authority'
 import { HTMLAttributes } from 'react'
 
 const widthWrapperVariants = cva(
-  'mx-auto w-full max-w-[1440px] px-3 md:px-12 ',
+  'mx-auto w-full max-w-screen-2xl px-3 md:px-12 ',
   {
     variants: {
       margin: {

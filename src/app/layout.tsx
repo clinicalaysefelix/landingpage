@@ -48,14 +48,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
-      <body className={cn('antialiased', plusJakartaSans.className)}>
-        <div className="flex min-h-screen flex-col">
-          <Navbar />
-          <main className="h-full flex-grow">{children}</main>
-          <Footer />
-          <WhatsappButton />
+    <html lang="pt-BR">
+      <body
+        className={cn('relative h-full antialiased', plusJakartaSans.className)}
+      >
+        <div className="flex min-h-screen w-full justify-center">
+          <div className="flex w-full flex-col">
+            <Navbar />
+            <main className="flex-1 flex-grow">{children}</main>
+            <Footer />
+          </div>
         </div>
+        <WhatsappButton />
       </body>
     </html>
   )

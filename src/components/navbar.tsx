@@ -16,6 +16,8 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet'
 import { Logo } from '@/assets/icons/logo'
+import { MotionNav } from '@/components/motion/motion-nav'
+import { animationConfig } from '@/lib/animation'
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,7 +29,13 @@ export function Navbar() {
       )}
     >
       <WidthWrapper margin="none">
-        <nav className="flex h-16 items-center justify-between md:h-20">
+        <MotionNav
+          variants={animationConfig.variants}
+          initial="navbarOffScreen"
+          animate="navbarOnScreen"
+          viewport={animationConfig.viewport}
+          className="flex h-16 items-center justify-between md:h-20"
+        >
           <Link href="/" target="_top">
             <Logo className="h-fit w-12 md:w-16" />
             <span className="sr-only">Clínica Layse Félix</span>
@@ -94,7 +102,7 @@ export function Navbar() {
               </ul>
             </SheetContent>
           </Sheet>
-        </nav>
+        </MotionNav>
       </WidthWrapper>
     </header>
   )
