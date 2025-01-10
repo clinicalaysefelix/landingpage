@@ -12,7 +12,7 @@ export function WhatsappButton() {
       animate="popOnScreen"
       href={siteConfig.links.whatsapp}
       target="_blank"
-      className="fixed bottom-4 right-4 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-[#25d366] text-white shadow-md hover:bg-[#32e575] md:h-14 md:w-14 [&_svg]:size-6"
+      className="fixed bottom-3 right-3 z-50 flex size-12 items-center justify-center rounded-full bg-green-500 shadow-2xl transition-colors hover:bg-green-600 focus:border-red-500 md:bottom-5 md:right-5 md:size-14 [&_svg]:size-6 md:[&_svg]:size-7"
     >
       <WhatsappIcon />
     </MotionLink>

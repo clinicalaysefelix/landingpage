@@ -6,13 +6,16 @@ import { PiPersonSimple, PiPersonSimpleTaiChi } from 'react-icons/pi'
 
 const Services: React.FC = () => {
   return (
-    <section className="scroll-m-8 rounded-t-3xl bg-section" id="servicos">
+    <section
+      className="scroll-m-8 overflow-hidden rounded-t-3xl bg-section"
+      id="servicos"
+    >
       <WidthWrapper>
         <MotionDiv
           variants={animationConfig.variants}
           viewport={animationConfig.viewport}
-          initial="toLeftOffScreen"
-          whileInView="toLeftOnScreen"
+          initial="toBottomOffScreen"
+          whileInView="toBottomOnScreen"
           className="flex flex-col gap-4"
         >
           <p className="text-base font-bold text-indigo-900">NOSSOS SERVIÇOS</p>
@@ -22,8 +25,8 @@ const Services: React.FC = () => {
           <MotionDiv
             variants={animationConfig.variants}
             viewport={animationConfig.viewport}
-            initial="toRightOffScreen"
-            whileInView="toRightOnScreen"
+            initial="toBottomOffScreen"
+            whileInView="toBottomOnScreen"
             className="mx-auto max-h-[400px] max-w-[500px] overflow-hidden rounded-2xl border border-primary/40 md:order-2"
           >
             <Image
@@ -38,8 +41,8 @@ const Services: React.FC = () => {
             <MotionDiv
               variants={animationConfig.variants}
               viewport={animationConfig.viewport}
-              initial="toLeftOffScreen"
-              whileInView="toLeftOnScreen"
+              initial="toBottomOffScreen"
+              whileInView="toBottomOnScreen"
               className="flex justify-start gap-4 rounded-2xl bg-white p-4 md:items-center md:bg-transparent md:px-0"
             >
               <div className="align-center h-fit w-fit rounded-xl bg-indigo-900 p-2">
@@ -59,8 +62,8 @@ const Services: React.FC = () => {
             <MotionDiv
               variants={animationConfig.variants}
               viewport={animationConfig.viewport}
-              initial="toLeftOffScreen"
-              whileInView="toLeftOnScreen"
+              initial="toBottomOffScreen"
+              whileInView="toBottomOnScreen"
               className="flex justify-start gap-4 rounded-2xl bg-white p-4 md:items-center md:bg-transparent md:px-0"
             >
               <div className="align-center h-fit w-fit rounded-xl bg-indigo-900 p-2">

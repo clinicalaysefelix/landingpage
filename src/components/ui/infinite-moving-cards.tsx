@@ -78,8 +78,8 @@ export const InfiniteMovingCards = ({
     <MotionDiv
     variants={animationConfig.variants}
     viewport={animationConfig.viewport}
-    initial="toRightOffScreen"
-    whileInView="toRightOnScreen"
+    initial="toBottomOffScreen"
+    whileInView="toBottomOnScreen"
       ref={containerRef}
       className={cn(
         "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",

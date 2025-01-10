@@ -13,8 +13,8 @@ const Footer: React.FC = () => {
         <MotionDiv
           variants={animationConfig.variants}
           viewport={animationConfig.viewport}
-          initial="toTopOffScreen"
-          animate="toTopOnScreen"
+          initial="toBottomOffScreen"
+          animate="toBottomOnScreen"
           className="flex flex-col items-center justify-between gap-6 font-primary font-medium text-white lg:flex-row"
         >
           <LogoFullMono className="h-fit w-48" />

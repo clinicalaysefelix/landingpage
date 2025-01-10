@@ -15,8 +15,8 @@ const Contact: React.FC = () => {
           <MotionDiv
             variants={animationConfig.variants}
             viewport={animationConfig.viewport}
-            initial="toLeftOffScreen"
-            whileInView="toLeftOnScreen"
+            initial="toBottomOffScreen"
+            whileInView="toBottomOnScreen"
             className="mr-auto flex flex-col items-center gap-4 text-center md:items-start md:text-start"
           >
             <p className="text-base font-bold text-indigo-900">
@@ -47,8 +47,8 @@ const Contact: React.FC = () => {
           <MotionDiv
             variants={animationConfig.variants}
             viewport={animationConfig.viewport}
-            initial="toRightOffScreen"
-            whileInView="toRightOnScreen"
+            initial="toBottomOffScreen"
+            whileInView="toBottomOnScreen"
             className="mx-auto flex h-full w-full flex-1 items-center md:h-72"
           >
             <iframe

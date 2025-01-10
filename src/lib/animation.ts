@@ -7,7 +7,7 @@ const createAnimationConfig = () => {
     duration: 0.6,
   }
 
-  const viewportDefault = { once: true, amount: 1 }
+  const viewportDefault = { once: true, amount: 0.9 }
 
   const animationsVariants: Variants = {
     popOffScreen: {
