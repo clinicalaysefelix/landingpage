@@ -1,8 +1,10 @@
 import { MotionDiv } from '@/components/motion/motion-div'
-import { Button } from '@/components/ui/button'
+import { siteConfig } from '@/config'
+import { buttonVariants } from '@/components/ui/button'
 import { WidthWrapper } from '@/components/width-wrapper'
 import { animationConfig } from '@/lib/animation'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const HeroSection: React.FC = () => {
   return (
@@ -22,8 +24,20 @@ const HeroSection: React.FC = () => {
               e personalizadas para promover o bem-estar físico e mental.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
-              <Button>Matricular-se</Button>
-              <Button variant="outline">Agendar aula experimental</Button>
+              <Link
+                href={siteConfig.links.whatsapp}
+                target="_blank"
+                className={buttonVariants()}
+              >
+                Matricular-se
+              </Link>
+              <Link
+                href={siteConfig.links.whatsapp}
+                target="_blank"
+                className={buttonVariants({ variant: 'outline' })}
+              >
+                Agendar aula experimental
+              </Link>
             </div>
           </MotionDiv>
 
